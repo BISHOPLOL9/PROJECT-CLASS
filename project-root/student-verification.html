@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Verification</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="dark-theme">
+    <div id="verification-container" class="centered-container">
+        <h2 class="glow">ARE YOU A STUDENT OF CLASS 8?</h2>
+        <div class="button-container">
+            <button id="yes-button" class="glow-button" onclick="location.href='enter-name.html';">Yes</button>
+            <button id="no-button" class="glow-button" onclick="handleStudentVerificationResponse(false);">No</button>
+        </div>
+    </div>
+
+    <script src="js/validation.js"></script>
+    <script>
+        function handleStudentVerificationResponse(isStudent) {
+            if (!isStudent) {
+                alert('This website is intended for students of class 8 only.');
+                // Optionally, redirect them to a different page or close the window
+                window.location.href = 'index.html'; // Redirect back to the homepage or another appropriate action
+            }
+        }
+    </script>
+    <!-- CoDev — A GPT 4.0 Virtual Developer, by twitter.com/@etherlegend -->
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "class8-homework-server",
+  "version": "1.0.0",
+  "description": "Server for Class 8 Homework Portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "mongoose": "^5.9.7" // If using MongoDB
+  },
+  "author": "CoDev, twitter.com/@etherlegend",
+  "license": "ISC"
+}np
